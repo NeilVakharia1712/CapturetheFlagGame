@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".Main2Activity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        android:id="@+id/frame"
+        android:background="@color/black"
+        app:boxedEdges="all">
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="230dp"
+            android:layout_height="671dp"
+            android:text="Capture The Flag"
+            android:textSize="45dp" />
+
+        <TextView
+            android:id = "@+id/show_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="100dp"
+            />
+
+
+
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
+
